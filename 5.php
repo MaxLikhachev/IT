@@ -11,7 +11,7 @@ function copylines($firstfilename, $secondfilename, $arrayindexes) {
                 file_put_contents($secondfilename, $line, FILE_APPEND); 
 }
 
-if(isset($_POST['firstfilename']) && isset($_POST['secondfilename']) && isset($_POST['arrayindexes']) && file_get_contents($_POST['firstfilename']) && file_get_contents($_POST['firstfilename'])){
+if(isset($_POST['firstfilename']) && isset($_POST['secondfilename']) && isset($_POST['arrayindexes']) && isset($_POST['submit']) && file_get_contents($_POST['firstfilename']) && file_get_contents($_POST['firstfilename'])) {
     $firstfilename = $_POST['firstfilename'];
     $secondfilename = $_POST['secondfilename'];
     $arrayindexes = preg_split('/[., ]/', $_POST['arrayindexes']);
