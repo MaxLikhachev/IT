@@ -1,9 +1,4 @@
-<?php
-include "header.php";
-include "form_render.php";
-include "message_render.php";
-echo '<link rel="stylesheet" href="style.scss">';
-
+<?
 $host = 'localhost:3306';
 $db = 'it_labs';
 $charset = 'utf8';
